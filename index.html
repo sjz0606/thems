@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>thems. — Erkaklar kiyimi, Toshkent. Bizda qimmat — faqat did.</title>
+<meta name="description" content="thems. — Toshkentdagi erkaklar kiyimi do'koni. Kuz '26 kolleksiyasi: pidjak, kostyum, trikotaj, poyabzal. Riviera Mall, Park in Mall, Glinka. +998 95 000 03 31">
+<meta property="og:title" content="thems. — Bizda qimmat, faqat did.">
+<meta property="og:description" content="Do'konimiz bo'ylab 3D sayr qiling, Kuz '26 obrazlarini narxlari bilan ko'ring va o'zingiznikini yig'ing.">
+<meta property="og:image" content="assets/og.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#10261f">
+<link rel="icon" href="assets/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Manrope:wght@300;400;500;600&subset=latin,cyrillic&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=8">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.4 3.5h2.7l1.5 4-2 1.5a12 12 0 0 0 6.4 6.4l1.5-2 4 1.5v2.7a2 2 0 0 1-2.2 2C10 18.900 5.100 14 4.400 5.700a2 2 0 0 1 2-2.200Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3.500" y="3.500" width="17" height="17" rx="4.800" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="3.900" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17" cy="7" r="1" fill="currentColor"/></symbol>
+  <symbol id="i-tg" viewBox="0 0 24 24"><path d="M21 4.500 3.500 11.300l5.300 1.900L18 7l-7 7.300v5l3.100-3.200 4 2.900L21 4.500Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.200 7-11.500A7 7 0 0 0 5 9.500C5 14.800 12 21 12 21Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="9.500" r="2.400" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.500l4.500 4.500L19 7.500" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-sound" viewBox="0 0 24 24"><path d="M4 9.500v5h3.500L12 18.500v-13L7.500 9.500H4Z M15.500 9a4 4 0 0 1 0 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/></symbol>
+</svg>
+
+<div id="loader" aria-hidden="true">
+  <svg class="ld-logo" viewBox="-4 -4 305 108"><path id="ld-path" fill-rule="evenodd"/></svg>
+  <div class="ld-bar"><i></i></div>
+  <p data-uz="Do'kon ochilmoqda" data-ru="Открываем магазин">Do'kon ochilmoqda</p>
+</div>
+
+<header id="top">
+  <a class="brand" href="#hero" aria-label="thems."><svg viewBox="-1 -1 299 102"><path class="logo-p" fill-rule="evenodd"/></svg></a>
+  <nav>
+    <a href="#obrazlar" data-uz="Obrazlar" data-ru="Образы">Obrazlar</a>
+    <a href="#kadrlar" data-uz="Kadrlar" data-ru="Кадры">Kadrlar</a>
+    <a href="#filiallar" data-uz="Filiallar" data-ru="Филиалы">Filiallar</a>
+  </nav>
+  <div class="h-right">
+    <div class="lang" role="group" aria-label="Til">
+      <button data-lang="uz" class="on">UZ</button><button data-lang="ru">RU</button>
+    </div>
+    <a class="h-tel" href="tel:+998950000331" aria-label="Qo'ng'iroq"><svg><use href="#i-phone"/></svg><span>+998 95 000 03 31</span></a>
+  </div>
+</header>
+
+<main>
+<!-- 3D SAYR -->
+<section id="hero" class="walk">
+  <div class="stage">
+    <canvas id="gl"></canvas>
+    <img id="gl-fallback" src="assets/fallback.webp" alt="" hidden>
+    <div class="vign"></div>
+
+    <div class="ch ch-hero" data-from="0" data-to="0">
+      <p class="eyebrow" data-uz="Kuz ’26 · Toshkent" data-ru="Осень ’26 · Ташкент">Kuz ’26 · Toshkent</p>
+      <h1><span data-uz="Bizda qimmat —" data-ru="Дорого у нас —">Bizda qimmat —</span><br><em data-uz="faqat did." data-ru="только вкус.">faqat did.</em></h1>
+      <div class="scroll-hint"><i></i><span data-uz="Scroll qiling — do'konga kiramiz" data-ru="Листайте — зайдём в магазин">Scroll qiling — do'konga kiramiz</span></div>
+    </div>
+
+    <div class="ch ch-left" data-from="2" data-to="2">
+      <p class="eyebrow" data-uz="Vitrina" data-ru="Витрина">Vitrina</p>
+      <h2 data-uz="Uchta jaket.<br><em>Bitta mavsum.</em>" data-ru="Три жакета.<br><em>Один сезон.</em>">Uchta jaket.<br><em>Bitta mavsum.</em></h2>
+      <p class="lead" data-uz="Manekenni bosing: yaqinroq ko'rasiz va narxini bilasiz." data-ru="Нажмите на манекен: рассмотрите ближе и узнаете цену.">Manekenni bosing: yaqinroq ko'rasiz va narxini bilasiz.</p>
+    </div>
+
+    <div class="ch ch-tag" data-from="3" data-to="3">
+      <span class="num">01 / 03</span><h3>Houndstooth Jacket</h3><p class="art">Art. 6669</p><p class="price">1 599 000 <small data-uz="so'm" data-ru="сум">so'm</small></p>
+      <p class="note" data-uz="Klassik gusa panjasi naqshi. To'rt cho'ntak va bel kamari." data-ru="Классическая «гусиная лапка». Четыре кармана и пояс.">Klassik gusa panjasi naqshi. To'rt cho'ntak va bel kamari.</p>
+      <button class="btn gold tag-btn" data-man="0"><span data-uz="Filialda olib qo'ying" data-ru="Отложить в филиале">Filialda olib qo'ying</span><svg><use href="#i-arrow"/></svg></button>
+    </div>
+    <div class="ch ch-tag" data-from="4" data-to="4">
+      <span class="num">02 / 03</span><h3>Checked Bomber</h3><p class="art">Art. 6682</p><p class="price">1 399 000 <small data-uz="so'm" data-ru="сум">so'm</small></p>
+      <p class="note" data-uz="Klassik shim bilan ham, jins bilan ham ishlaydi." data-ru="Работает и с классическими брюками, и с джинсами.">Klassik shim bilan ham, jins bilan ham ishlaydi.</p>
+      <button class="btn gold tag-btn" data-man="1"><span data-uz="Filialda olib qo'ying" data-ru="Отложить в филиале">Filialda olib qo'ying</span><svg><use href="#i-arrow"/></svg></button>
+    </div>
+    <div class="ch ch-tag" data-from="5" data-to="5">
+      <span class="num">03 / 03</span><h3>Milano Jacket</h3><p class="art">Art. JK9011</p><p class="price">1 399 000 <small data-uz="so'm" data-ru="сум">so'm</small></p>
+      <p class="note" data-uz="Haqiqiy italiano: jun mato, o'lchamlar M — 3XL." data-ru="Настоящий итальяно: шерсть, размеры M — 3XL.">Haqiqiy italiano: jun mato, o'lchamlar M — 3XL.</p>
+      <button class="btn gold tag-btn" data-man="2"><span data-uz="Filialda olib qo'ying" data-ru="Отложить в филиале">Filialda olib qo'ying</span><svg><use href="#i-arrow"/></svg></button>
+    </div>
+
+    <div class="ch ch-shoes" data-from="6" data-to="6">
+      <p class="eyebrow" data-uz="Javon" data-ru="Полка">Javon</p>
+      <h2 data-uz="Obraz oyoqdan<br><em>boshlanadi.</em>" data-ru="Образ начинается<br><em>с обуви.</em>">Obraz oyoqdan<br><em>boshlanadi.</em></h2>
+      <ul class="shoe-prices">
+        <li><span>Loafers</span><b>1 499 000</b></li>
+        <li><span data-uz="Sneakers, keda" data-ru="Сникерсы, кеды">Sneakers, keda</span><b>1 199 000</b></li>
+      </ul>
+    </div>
+
+    <div class="ch ch-end" data-from="7" data-to="7">
+      <h2 data-uz="Endi o'zingiznikini<br><em>tanlang.</em>" data-ru="Теперь выберите<br><em>свой.</em>">Endi o'zingiznikini<br><em>tanlang.</em></h2>
+      <a class="btn gold" href="#obrazlar"><span data-uz="Obrazlarni ko'rish" data-ru="Смотреть образы">Obrazlarni ko'rish</span><svg><use href="#i-arrow"/></svg></a>
+    </div>
+
+    <a class="skip" href="#obrazlar"><span data-uz="O'tkazib yuborish" data-ru="Пропустить">O'tkazib yuborish</span><svg><use href="#i-chev"/></svg></a>
+    <div class="prog" aria-hidden="true"><i id="prog-i"></i></div>
+  </div>
+</section>
+
+<!-- OBRAZLAR -->
+<section id="obrazlar" class="light">
+  <div class="sec-head">
+    <div>
+      <p class="eyebrow dk" data-uz="Kuz ’26 kolleksiyasi" data-ru="Коллекция осень ’26">Kuz ’26 kolleksiyasi</p>
+      <h2 class="big" data-uz="Tayyor obraz.<br><em>Har buyum narxi bilan.</em>" data-ru="Готовый образ.<br><em>С ценой на каждую вещь.</em>">Tayyor obraz.<br><em>Har buyum narxi bilan.</em></h2>
+    </div>
+    <p class="sec-note" data-uz="Obrazni oching, kerak bo'lmagan buyumni olib tashlang: jami o'zi qayta hisoblanadi. Tanlovingizni Direct'ga yuboring, o'lchamingizni aytamiz va qulay filialga olib qo'yamiz." data-ru="Откройте образ, уберите лишнее: итог пересчитается сам. Отправьте выбор в Direct: подскажем размер и отложим в удобном филиале.">Obrazni oching, kerak bo'lmagan buyumni olib tashlang: jami o'zi qayta hisoblanadi. Tanlovingizni Direct'ga yuboring, o'lchamingizni aytamiz va qulay filialga olib qo'yamiz.</p>
+  </div>
+  <div class="filters" id="filters" role="tablist"></div>
+  <div class="grid" id="grid"></div>
+</section>
+
+<!-- KADRLAR -->
+<section id="kadrlar" class="dark">
+  <div class="sec-head">
+    <div>
+      <p class="eyebrow" data-uz="Instagram'dan" data-ru="Из Instagram">Instagram'dan</p>
+      <h2 class="big" data-uz="Kiyim harakatda<br><em>yaxshiroq ko'rinadi.</em>" data-ru="Одежду лучше<br><em>видно в движении.</em>">Kiyim harakatda<br><em>yaxshiroq ko'rinadi.</em></h2>
+    </div>
+    <a class="link" href="https://www.instagram.com/thems.uz/" target="_blank" rel="noopener"><svg><use href="#i-ig"/></svg>@thems.uz · 37,7K</a>
+  </div>
+  <div class="reels" id="reels"></div>
+</section>
+
+<!-- FILIALLAR -->
+<section id="filiallar" class="green">
+  <div class="sec-head">
+    <div>
+      <p class="eyebrow" data-uz="Har kuni 10:00 — 22:00" data-ru="Ежедневно 10:00 — 22:00">Har kuni 10:00 — 22:00</p>
+      <h2 class="big" data-uz="Uch filial.<br><em>Bitta did.</em>" data-ru="Три филиала.<br><em>Один вкус.</em>">Uch filial.<br><em>Bitta did.</em></h2>
+    </div>
+    <a class="btn gold" href="tel:+998950000331"><svg><use href="#i-phone"/></svg><span>+998 95 000 03 31</span></a>
+  </div>
+  <div class="branches">
+    <a class="branch" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Riviera+Mall+Tashkent">
+      <figure><img loading="lazy" src="assets/b/riviera.webp" alt="thems. Riviera Mall"></figure>
+      <h3>Riviera Mall</h3><p data-uz="1-qavat" data-ru="1 этаж">1-qavat</p>
+      <span class="go"><svg><use href="#i-pin"/></svg><span data-uz="Yo'nalish" data-ru="Маршрут">Yo'nalish</span></span>
+    </a>
+    <a class="branch" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Park+in+Mall+Tashkent">
+      <figure><img loading="lazy" src="assets/b/park.webp" alt="thems. Park in Mall"></figure>
+      <h3>Park in Mall</h3><p data-uz="2-qavat" data-ru="2 этаж">2-qavat</p>
+      <span class="go"><svg><use href="#i-pin"/></svg><span data-uz="Yo'nalish" data-ru="Маршрут">Yo'nalish</span></span>
+    </a>
+    <a class="branch" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Nukus+ko%27chasi+27A+Tashkent">
+      <figure><img loading="lazy" src="assets/b/glinka.webp" alt="thems. Glinka"></figure>
+      <h3>Glinka</h3><p data-uz="Nukus ko'chasi, 27A" data-ru="Улица Нукус, 27A">Nukus ko'chasi, 27A</p>
+      <span class="go"><svg><use href="#i-pin"/></svg><span data-uz="Yo'nalish" data-ru="Маршрут">Yo'nalish</span></span>
+    </a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <svg class="f-logo" viewBox="-1 -1 299 102" aria-label="thems."><path class="logo-p" fill-rule="evenodd"/></svg>
+  <div class="f-links">
+    <a href="https://www.instagram.com/thems.uz/" target="_blank" rel="noopener"><svg><use href="#i-ig"/></svg>Instagram</a>
+    <a href="https://t.me/themsuz" target="_blank" rel="noopener"><svg><use href="#i-tg"/></svg>Telegram</a>
+    <a href="tel:+998950000331"><svg><use href="#i-phone"/></svg>+998 95 000 03 31</a>
+  </div>
+  <p class="f-copy">© 2026 thems. · <span data-uz="Bizda qimmat — faqat did." data-ru="Дорого у нас — только вкус.">Bizda qimmat — faqat did.</span></p>
+</footer>
+
+<!-- OBRAZ OYNASI -->
+<div id="sheet" aria-hidden="true" role="dialog" aria-modal="true">
+  <div class="sh-bg" data-close></div>
+  <div class="sh-box">
+    <button class="sh-x" data-close aria-label="Yopish"><svg><use href="#i-x"/></svg></button>
+    <div class="sh-gal" id="sh-gal"></div>
+    <div class="sh-info">
+      <p class="eyebrow dk" id="sh-cat"></p>
+      <h3 id="sh-title"></h3>
+      <ul id="sh-items"></ul>
+      <div class="sh-total"><span data-uz="Jami" data-ru="Итого">Jami</span><b id="sh-sum"></b></div>
+      <p class="sh-lbl" data-uz="Qaysi filialda olib qo'yaylik?" data-ru="В каком филиале отложить?">Qaysi filialda olib qo'yaylik?</p>
+      <div class="chips" id="sh-branch"></div>
+      <button class="btn dark-b" id="sh-send"><svg><use href="#i-ig"/></svg><span data-uz="Direct'ga yuborish" data-ru="Отправить в Direct">Direct'ga yuborish</span></button>
+      <a class="btn ghost" href="tel:+998950000331"><svg><use href="#i-phone"/></svg><span data-uz="Qo'ng'iroq qilish" data-ru="Позвонить">Qo'ng'iroq qilish</span></a>
+      <p class="sh-hint" id="sh-hint" hidden data-uz="Tanlovingiz nusxalandi: Direct'ga joylab yuboring." data-ru="Выбор скопирован: вставьте его в Direct.">Tanlovingiz nusxalandi: Direct'ga joylab yuboring.</p>
+    </div>
+  </div>
+</div>
+
+<script src="vendor/gsap.min.js"></script>
+<script src="vendor/ScrollTrigger.min.js"></script>
+<script src="vendor/lenis.min.js"></script>
+<script src="assets/data.js?v=8"></script>
+<script type="module" src="js/app.js?v=8"></script>
+</body>
+</html>
